@@ -8,8 +8,19 @@ import { sampleText } from './sampleText'
 
 class App extends Component {
   state = {
-    text : sampleText,
-    result : ""
+    text : sampleText
+  }
+
+  componentDidMount () {
+    let text = localStorage.getItem('text')
+    if(text){
+      this.setState({ text })
+    }
+  }
+
+  componentDidUpdate () {
+    const { text } = this.state
+    localStorage.setItem('text', text)
   }
 
   handleChange = event => {
@@ -18,7 +29,7 @@ class App extends Component {
   }
 
   renderText = text => {
-    const __html = marked(text, { sanitize: true })
+    const __html = marked(text)
     return { __html }
   }
 
