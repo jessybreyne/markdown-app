@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Editeur de Markdown
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projet créé en React. Permet d'éditer du markdown et de voir le résultat en direct. Garde en mémoire ce qui est écrit dans le navigateur.
+
+(Créé à l'aide d'une formation: plateforme de formation Skileos, « Créer une application ou une page web avec React, bibliothèque de JavaScript par Anthony Welc »)
 
 ## Available Scripts
 
